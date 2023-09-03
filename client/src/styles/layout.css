@@ -1,5 +1,243 @@
 .header_layout {
-    background: #218ada;
+    background: #92ccf9;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_layout .header_logo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_layout .header_logo_container h2 {
+    color: #fff;
+}
+
+.header_layout .header_logo_container .header_logo {
+    height: 120px;
+    width: 120px;
+}
+
+.header_menu_icon {
+    position: fixed;
+    right: 22px;
+    top: 25px;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+}
+
+.header_menu_cross {
+    position: fixed;
+    right: 22px;
+    top: 25px;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 28px;
+    color: #fff;
+}
+
+.header_menu {
+    position: fixed;
+    border-radius: 22px;
+    width: 240px;
+    height: 390px;
+    background-color: rgba(7, 222, 241, 0.913);
+    top: 20px;
+    right: 10px;
+    transition: all .4s ease-in;
+}
+
+.header_menu_display {
+    position: fixed;
+    border-radius: 22px;
+    width: 240px;
+    height: 310px;
+    background-color: rgba(7, 222, 241, 0.913);
+    top: 20px;
+    right: -400px;
+    transition: all .4s ease-in;
+}
+
+.header_menu_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.header_menu_list li {
+    border-bottom: 1px solid #fff;
+    padding: 4px;
+}
+
+.header_menu_list li:hover {
+    background-color: #0c4591;
+    border-bottom: none;
+}
+
+.header_menu_list li a {
+    color: #23589e;
+}
+
+.header_menu_list li a:hover {
+    color: #ffffff;
+}
+
+.header_menu_list .header_pagination {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width:80%;
+}
+
+.header_menu_list .header_credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width:80%;
+}
+
+
+/* RESPONSIVE IPADS */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .header_layout .header_logo_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_layout .header_logo_container h2 {
+        font-size: 60px;
+    }
+
+    .header_layout .header_logo_container .header_logo {
+        height: 320px;
+        width: 320px;
+    }
+
+    .header_menu {
+        position: fixed;
+        border-radius: 22px;
+        width: 400px;
+        height: 490px;
+        background-color: rgba(7, 222, 241, 0.913);
+        top: 20px;
+        right: 10px;
+        transition: all .4s ease-in;
+    }
+
+    .header_menu_list li a {
+        font-size: 30px;
+    }
+
+    .header_menu_icon {
+        position: fixed;
+        right: 22px;
+        top: 25px;
+        z-index: 1000;
+        cursor: pointer;
+        font-size: 42px;
+        color: #fff;
+    }
+
+    .header_menu_cross {
+        position: fixed;
+        right: 22px;
+        top: 25px;
+        z-index: 1000;
+        cursor: pointer;
+        font-size: 48px;
+        color: #fff;
+    }
+}
+
+/* RESPONSIVE PC */
+@media screen and (min-width: 1200px) {
+    .header_layout .header_logo_container {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        z-index: 1000;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 40px;
+        border: 6px solid #0c4591;
+    }
+
+    .header_layout .header_logo_container .header_logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header_layout .header_logo_container h2 {
+        color: #000;
+        font-size: 20px;
+    }
+
+    .header_menu_icon {
+        display: none;
+    }
+
+    .header_menu_cross {
+        display: none;
+    }
+
+    .header_menu_display {
+        display: block;
+        position: relative;
+        width: 100%;
+        top: 0;
+        background-color: #2479e8;
+        right: 0;
+        border-radius: 0;
+        height: 100px;
+        padding: 24px;
+        border-bottom: 6px solid #0c4591;
+    }
+
+    .header_menu_list  {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_menu_list li {
+        border-bottom: none;
+        border-radius: 20px;
+        background-color: #218ada;
+        padding: 12px;
+    }
+
+    .header_menu_list li a {
+        color: #fff;
+    }
+
+    .header_menu_list .header_pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+    .header_menu_list .header_credentials {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
 }
