@@ -1,7 +1,6 @@
 .header_layout {
     background: #92ccf9;
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,6 +163,7 @@
 
 /* RESPONSIVE PC */
 @media screen and (min-width: 1200px) {
+
     .header_layout .header_logo_container {
         display: flex;
         align-items: center;

@@ -1,0 +1,124 @@
+.banner_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(5, 135, 144);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 70%;
+    height: 600px;
+    display: flex;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgb(154, 203, 214);
+    align-items: center;
+    box-shadow: 12px 12px 9px 10px rgba(0, 0, 0, .4);
+}
+
+.banner .main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 20px;
+}
+
+.banner .main_content h3 {
+    font-size: 40px;
+}
+
+.banner .main_content p {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.banner img {
+    width: 47%;
+    height: 80%;
+    border-radius: 12px;
+    box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, .4);
+}
+
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 767px) {
+
+    .banner_container {
+        height: 100vh;
+        background-color: rgb(5, 135, 144);
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        justify-content: center;
+        padding: 25px;
+        box-shadow: none;
+    }
+
+    .banner .main_content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 18px;
+    }
+
+    .banner .main_content h3 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .banner .main_content p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .banner img {
+        width: 280px;
+    }
+}
+
+/* RESPONSIVE IPAD */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .banner_container {
+        height: 100vh;
+        background-color: rgb(5, 135, 144);
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        margin-top: -200px;
+        padding: 25px;
+        box-shadow: none;
+        height: auto;
+    }
+
+    .banner .main_content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 34px;
+    }
+
+    .banner .main_content h3 {
+        font-size: 34px;
+        font-weight: 800;
+    }
+
+    .banner .main_content p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .banner img {
+        width: 480px;
+    }
+}
