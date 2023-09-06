@@ -1,0 +1,123 @@
+.room_section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 70px;
+    background-color: #5898e6;
+}
+
+.room_section h1 {
+    font-size: 40px;
+}
+
+.room_container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.room_container .room_card {
+    background-color: #04074e3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 18px;
+    height: auto;
+    gap: 20px;
+    box-shadow: 4px 4px 9px 4px rgba(0,0,0, .4);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.room_container .room_card h2 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.room_container .room_card p {
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.room_container .room_card .paragraph_card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.room_container .room_img {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 9px 4px rgba(0,0,0, .4);
+}
+
+.room_container img {
+    width: 40px;
+}
+
+/* RESPONSIVE IPAD */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .room_section h1 {
+        font-size: 60px;
+    }
+
+    .room_container .room_card {
+        min-width: 80vw;
+    }
+
+    .room_container .room_img {
+        width: 400px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 9px 4px rgba(0,0,0, .4);
+    }
+
+    .room_container .room_card h2 {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .room_container .room_card p {
+        color: #fff;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* RESPONSIVE PC */
+@media screen and (min-width: 1024px) {
+    .room_section h1 {
+        font-size: 80px;
+    }
+
+    .room_container .room_card {
+        min-width: 50vw;
+        gap: 40px;
+    }
+
+    .room_container .room_img {
+        width: 600px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 9px 8px rgba(0,0,0, .4);
+    }
+
+    .room_container .room_card h2 {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .room_container .room_card p {
+        color: #fff;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+    }
+}

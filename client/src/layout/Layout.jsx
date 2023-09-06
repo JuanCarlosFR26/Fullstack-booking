@@ -16,7 +16,7 @@ const Layout = () => {
     <>
       <header className="header_layout">
         <div className="header_logo_container">
-          <img className="header_logo" src={LOGO} alt="logo booking"></img>
+          <Link to={'/'}><img className="header_logo" src={LOGO} alt="logo booking"></img></Link>
           <h2>Fs - Booking</h2>
         </div>
         {clicked ? (
